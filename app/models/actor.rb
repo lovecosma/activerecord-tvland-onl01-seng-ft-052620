@@ -10,6 +10,7 @@ class Actor < ActiveRecord::Base
     roles_and_shows = []
     self.shows.each do |show|
       roles_and_shows << show.characters.name + " - " + show.name
+      binding.pry
      end
      roles_and_shows
   end
