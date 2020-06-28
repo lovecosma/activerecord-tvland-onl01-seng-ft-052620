@@ -11,5 +11,7 @@ class Actor < ActiveRecord::Base
     self.shows.each do |show|
       roles_and_shows << self.show.characters.take + " - " + self.shows.name.takes
      end
+     roles_and_shows
   end
+
 end
